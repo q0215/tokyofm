@@ -3,9 +3,9 @@ name: darehana
 on:
   # 手動実行
   workflow_dispatch:
-  # 定期実行（月-木 16:00+0900）
+  # 定期実行（月-木 15:30+0900）
   schedule:
-    - cron: '0 7 * * 1-4'
+    - cron: '30 6 * * 1-4'
 
 env:
   TZ: 'Asia/Tokyo'
@@ -31,10 +31,10 @@ jobs:
           Y=`date '+%Y'`
           M=`date '+%m'`
           D=`date '+%d'`
-          mkdir -p ./${Y}/${M}/
-          cd ./${Y}/${M}/
+          mkdir -p ./darehana/${Y}/${M}/
+          cd ./darehana/${Y}/${M}/
           rm -f ${Y}${M}${D}.xml
-          if curl "http://radiko.jp/v3/program/date/${Y}${M}${D}/JP13.xml" | grep darehana > /dev/null; then
+          if curl "http://radiko.jp/v3/program/date/${Y}${M}${D}/JP13.xml" | grep "山崎怜奈の誰かに話したかったこと。" > /dev/null; then
           curl "https://radiko.jp/v2/api/noa?station_id=FMT&ft=${Y}${M}${D}130000&to=${Y}${M}${D}145500" -o ${Y}${M}${D}.xml
           fi
 
