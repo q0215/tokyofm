@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   # 定期実行（月-木 6:00+0900）
   schedule:
-    - cron: '0 21 * * 1-4'
+    - cron: '0 21 * * 0-3'
 
 env:
   TZ: 'Asia/Tokyo'
