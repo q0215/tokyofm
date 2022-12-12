@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed>
+<station id="FMT">TOKYO FM</station>
+<noa>
+<item amazon="" artist="The Ronettes" img="https://radiko.jp/ac/v1/image/small?artist=The%20Ronettes" img_large="https://radiko.jp/ac/v1/image/large?artist=The%20Ronettes" itemid="63978f6860c18815" itunes="" program_title="Memories＆Discoveries" recochoku="" stamp="2022-12-13 05:01:26" title="Sleigh Ride（MONO）" />
+<item amazon="" artist="Phoebe Bridgers" img="https://radiko.jp/ac/v1/image/small?artist=Phoebe%20Bridgers" img_large="https://radiko.jp/ac/v1/image/large?artist=Phoebe%20Bridgers" itemid="63978f688c5bf34" itunes="" program_title="Memories＆Discoveries" recochoku="" stamp="2022-12-13 05:05:31" title="Kyoto" />
+<item amazon="https://www.amazon.co.jp/dp/B081WR7TN5?tag=radiko-22&amp;linkCode=ogi&amp;th=1&amp;psc=1" artist="シュトラウス：ウィーン・フィルハーモニー管弦楽団" img="https://m.media-amazon.com/images/I/61Us8ryaEqL._SL160_.jpg" img_large="https://m.media-amazon.com/images/I/61Us8ryaEqL._SL500_.jpg" itemid="63978f682519e1bc" itunes="" program_title="Memories＆Discoveries" recochoku="" stamp="2022-12-13 05:15:17" title="ワルツ「愛の挨拶」　作品５６　（第１部）" />
+<item amazon="" artist="Johnny Hates Jazz" img="https://radiko.jp/ac/v1/image/small?artist=Johnny%20Hates%20Jazz" img_large="https://radiko.jp/ac/v1/image/large?artist=Johnny%20Hates%20Jazz" itemid="63978f689c0e12dd" itunes="https://music.apple.com/jp/album/shattered-dreams/724212804?i=724212909&amp;uo=4&amp;at=10l4xm&amp;app=itunes" program_title="Memories＆Discoveries" recochoku="https://recochoku.jp/song/S1000004684/?affiliate=6501010009" stamp="2022-12-13 05:21:52" title="Shattered Dreams" />
+<item amazon="https://www.amazon.co.jp/dp/B000AO8C6A?tag=radiko-22&amp;linkCode=ogi&amp;th=1&amp;psc=1" artist="アル・クーパー" img="https://m.media-amazon.com/images/I/51MQqpBw6PL._SL160_.jpg" img_large="https://m.media-amazon.com/images/I/51MQqpBw6PL._SL500_.jpg" itemid="63978f68f9cca41d" itunes="" program_title="Memories＆Discoveries" recochoku="" stamp="2022-12-13 05:25:22" title="ブランド・ニュー・デイ" />
+</noa>
+</feed>
