@@ -3,6 +3,13 @@ name: darehana
 on:
   # 手動実行
   workflow_dispatch:
+    inputs:
+      year:
+        description: "[optional] year"
+      month:
+        description: "[optional] month"
+      day:
+        description: "[optional] day"
   # 定期実行（月-木 15:30+0900）
   schedule:
     - cron: '30 6 * * 1-4'
@@ -16,11 +23,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # ロギング
-      - name: Print date
-        run: |
-          echo `date '+%Y%m%d'`
-
       # チェックアウト
       - name: Checkout
         uses: actions/checkout@v2
@@ -28,9 +30,13 @@ jobs:
       # ダウンロード
       - name: Download file
         run: |
-          Y=`date '+%Y'`
-          M=`date '+%m'`
-          D=`date '+%d'`
+          ENV_Y=${{ github.event.inputs.year }}
+          ENV_M=${{ github.event.inputs.month }}
+          ENV_D=${{ github.event.inputs.day }}
+          Y=${ENV_Y:-`date '+%Y'`}
+          M=${ENV_M:-`date '+%m'`}
+          D=${ENV_D:-`date '+%d'`}
+          echo $Y-$M-$D
           mkdir -p ./darehana/${Y}/${M}/
           cd ./darehana/${Y}/${M}/
           rm -f ${Y}${M}${D}.xml
